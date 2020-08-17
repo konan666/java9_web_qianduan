@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/my.js"></script>
+    <script>
+   function ar(num){
+       var num=0;
+       var res=parseInt(num)
+       console.log(typeof res)
+       if(isNaN(res)){
+           alert("输入的数数字")
+       }else{
+           alert("输入的不是数字")
+           console.log(isNaN(res))
+       }
+
+   }
+
+
+    </script>
+</head>
+<body>
+<input type="button" value="点我啊" onclick="ar(15)">
+</body>
+</html>

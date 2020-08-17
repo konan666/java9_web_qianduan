@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function aa(num) {
+            var sum=0
+            for(var i=0;i<=num;i++){
+                sum+=i;
+            }
+          var rr=document.getElementById("div1")
+            rr.innerHTML=sum;
+        }
+
+    </script>
+</head>
+<body>
+<p id="div1"></p>
+<input type="button" onclick="aa(100)"value="点我啊">
+</body>
+</html>
