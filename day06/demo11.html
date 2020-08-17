@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+    <script>
+        var arr=['#ffffff','#000000']
+        var a=0;
+        function aa() {
+            var a1=document.getElementById("a1")
+            var color=arr[a++]
+            a1.style.backgroundColor=color
+            if(a==arr.length){
+                a=0
+            }
+        }
+    </script>
+</head>
+<body id="a1">
+<button id="button" onclick="aa()">开关灯</button>
+</body>
+</html>

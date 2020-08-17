@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+            width: 300px;
+            height: 30px;
+            line-height: 30px;
+            color: #ffffff;
+            background-color: skyblue;
+        }
+        #a1{
+            display: none;
+        }
+        #a2{
+            display: none;
+        }
+        #a3{
+            display: none;
+        }
+        #a4{
+            display: none;
+        }
+
+    </style>
+    <script>
+       function date() {
+           var a1=document.getElementById("a1")
+           var a2=document.getElementById("a2")
+           var a3=document.getElementById("a3")
+           var a4=document.getElementById("a4")
+           var date =new Date()
+        var date1=document.getElementById("date")
+        var hover=date.getHours()
+          if(hover>=0 && hover<=6){
+              a1.style.display="block"
+              a2.style.display="none"
+              a3.style.display="none"
+              a4.style.display="none"
+          }if(hover>=7 && hover<=11){
+               a2.style.display="block"
+               a1.style.display="none"
+               a3.style.display="none"
+               a4.style.display="none"
+           }if(hover>=12 && hover<=19){
+               a3.style.display="block"
+               a2.style.display="none"
+               a1.style.display="none"
+               a4.style.display="none"
+           }if(hover>=20 && hover<=23){
+               a4.style.display="block"
+               a2.style.display="none"
+               a3.style.display="none"
+               a1.style.display="none"
+           }
+       }
+    </script>
+</head>
+<body>
+<p id="date">显示当前系统的时间</p>
+<br>
+<button onclick="date()">点击显示</button>
+<div id="a1">
+    <img src="../img/z.gif" alt="">
+</div>
+<div id="a2">
+    <img src="../img/s.gif" alt="">
+</div>
+<div id="a3">
+    <img src="../img/x.gif" alt="">
+</div>
+<div id="a4">
+    <img src="../img/w.gif" alt="">
+</div>
+</body>
+</html>

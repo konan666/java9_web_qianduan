@@ -39,14 +39,14 @@
     <property name="settings.editor.selected.configurable" value="liveEdit" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\javaproject\web_qianduan\java9_web_qianduan\img" />
+      <recent name="D:\javaproject\web_qianduan\java9_web_qianduan" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\javaproject\web_qianduan\java9_web_qianduan\img" />
       <recent name="D:\javaproject\web_qianduan\java9_web_qianduan" />
       <recent name="D:\javaproject\web_qianduan\java9_web_qianduan\day01" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\javaproject\web_qianduan\java9_web_qianduan\img" />
-      <recent name="D:\javaproject\web_qianduan\java9_web_qianduan" />
     </key>
   </component>
   <component name="RunManager">
@@ -75,7 +75,7 @@
       <workItem from="1597370326956" duration="10914000" />
       <workItem from="1597452751850" duration="6159000" />
       <workItem from="1597471719540" duration="7009000" />
-      <workItem from="1597624525038" duration="6418000" />
+      <workItem from="1597624525038" duration="16947000" />
     </task>
     <servers />
   </component>

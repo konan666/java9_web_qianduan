@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #d1{
+            display: block;
+        }
+        #d2{
+            display: none;
+        }
+    </style>
+    <script>
+        function ch(num) {
+            var d1=document.getElementById("d1")
+            var d2=document.getElementById("d2")
+            if(num==1){
+                d1.style.display="block"
+                d2.style.display="none"
+            }else if(num==2){
+                d2.style.display="block"
+                d1.style.display="none"
+            }
+
+        }
+    </script>
+</head>
+<body>
+<button onclick="ch(1)">OTTO</button>
+<button onclick="ch(2)">鲁迅</button>
+<div id="d1">
+    <img src="../img/1.jpg" alt="">
+</div>
+<div id="d2">
+    <img src="../img/lx.jpg" alt="">
+</div>
+</body>
+</html>
