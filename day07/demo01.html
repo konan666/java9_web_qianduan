@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style-type: none;
+        }
+        .box{
+            width: 250px;
+            margin: 100px auto;
+        }
+        .box li{
+            background-image: url("../img/6666.png");
+            float: left;
+            width: 24px;
+            height: 24px;
+
+            margin: 15px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+    </ul>
+</div>
+<script>
+    //获取网页中所有的li
+var li=document.querySelectorAll("li")
+    for (var i = 0; i < li.length; i++) {
+        y=i*43.8
+        li[i].style.backgroundPosition='0-'+y+'px'
+    }
+</script>
+</body>
+</html>

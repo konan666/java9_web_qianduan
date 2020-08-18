@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="password" onblur="ch()"onfocus="bh()"><a><img src="../img/mess.png" alt="">请输入6-16位密码</a><p id="aa1"></p>
+<script>
+function ch() {
+    var input=document.querySelector("input").value
+    var a=document.querySelector("a")
+    console.log(input)
+    if(input.length>=6&&input.length<=16){
+        a.style.color="green"
+        a.innerHTML="<img src=\"../img/right.png\" alt=\"\">您输入的正确"
+    }else{
+        a.style.color="red"
+        a.innerHTML="<img src=\"../img/wrong.png\" alt=\"\">您输入的位数不正确，要求6-16位"
+    }
+
+}
+function bh() {
+    var a=document.querySelector("a")
+    a.style.color="black"
+        a.innerHTML="请输入6-16位密码"
+
+}
+
+</script>
+</body>
+</html>

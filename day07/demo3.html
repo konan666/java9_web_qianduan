@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #a1{
+            width: 200px;
+            height: 200px;
+            color: black;
+            background-color: pink;
+            display: block;
+
+        }
+        #a2{
+            width: 200px;
+            height: 200px;
+            color: white;
+            background-color: blue;
+            display: none;
+            margin-top: 100px;
+        }
+    </style>
+    <script>
+        function ah(num) {
+            var a1=document.getElementById("a1")
+            var a2=document.getElementById("a2")
+            if (num==1){
+                a1.style.display="block"
+                a2.style.display="none"
+            }else{
+                a2.style.display="block"
+                a1.style.display="none"
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="a1"onclick="ah(2)">文本</div>
+<div id="a2"onclick="ah(1)">文本</div>
+</body>
+</html>

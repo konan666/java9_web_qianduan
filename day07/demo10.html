@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .tab {
+            width: 978px;
+            margin: 100px auto;
+        }
+
+        .tab_list {
+            height: 39px;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab_list li {
+            float: left;
+            height: 39px;
+            line-height: 39px;
+            padding: 0 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .tab_list .current {
+            background-color: #c81623;
+            color: #fff;
+        }
+
+        .item_info {
+            padding: 20px 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="tab">
+    <div class="tab_list">
+        <ul>
+            <li>商品介绍</li>
+            <li >规格与包装</li>
+            <li>售后保障</li>
+            <li>商品评价（50000）</li>
+            <li>手机社区</li>
+        </ul>
+    </div>
+
+</div>
+<script>
+    var tab_list=document.querySelector("tab_list")
+    var li=document.querySelectorAll("li")
+    for (var i = 0; i < li.length; i++) {
+        li[i].setAttribute("index",i)
+        li[i].onclick=function (){
+            for (var j = 0; j <li.length ; j++) {
+                li[j].className=""
+            }
+            this.className="current"
+            var index=this.getAttribute("index")
+            console.log(index)
+
+        }
+    }
+</script>
+</body>
+</html>
