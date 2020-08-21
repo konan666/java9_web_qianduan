@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ipput>
+
+</ipput>
+<div></div>
+<script>
+    f()
+    setInterval(f,1000)
+    function f() {
+        var date=new Date()
+        var year=date.getFullYear()
+        var mon=date.getMonth()+1
+        var day=date.getDay()
+        var hous=date.getDate()
+        var time=date.getHours()
+        var minue=date.getMinutes()
+        var secoud=date.getSeconds()
+        var div=document.querySelector('div')
+        div.innerHTML=year+'年'+mon+'月'+hous+'日'+'星期'+day+'\t北京时间'+time+"时"+minue+'分'+secoud+'秒'
+    }
+</script>
+</body>
+</html>

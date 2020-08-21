@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="ul">
+    <li>西施</li>
+    <li>貂蝉</li>
+    <li>昭君</li>
+    <li>凤姐</li>
+    <li>芙蓉姐姐</li>
+</ul>
+<input type="button" value="按钮" id="btn" />
+<script>
+    var ul=document.querySelector("ul")
+    var input=document.querySelector('input')
+    btn.onclick=function (){
+        var li=document.createElement("li")
+        li.innerHTML='cxk'
+        ul.insertBefore(li, ul.children[0])
+    }
+    //事件委托的原理，给父节点添加侦听器
+    //利用时间冒泡去影响每一个子节点
+    ul.addEventListener('click',function (e){
+        // alert('点了点了')
+        // e.target 可以得到我们点击的对象
+        e.target.style.backgroundColor = 'blue';
+    })
+
+
+    //给父节点注册事件，利用事件冒泡，给子元素事件触发，会冒泡到父元素
+    //然后控制想应得子元素
+</script>
+</body>
+</html>
