@@ -9,14 +9,15 @@
 <button>方法监听注册事件</button>
 <script>
     var btns=document.querySelectorAll("button")
+    let btnss=document.getElementsByTagName("button")
     //传统事件
     // 传统  唯一
-    btns[0].onclick = function () {
+    btnss[0].onclick = () =>{
         alert('haha')
     }
-    btns[0].onclick = function () {
-        alert('hehe')
-    }
+    // btns[0].onclick = function () {
+    //     alert('hehe')
+    // }
     // 方法监听注册事件
     // 不带on
     btns[1].addEventListener('click', function () {

@@ -27,8 +27,9 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -37,6 +38,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -97,6 +99,16 @@
       <workItem from="1598232234927" duration="4351000" />
       <workItem from="1598318367140" duration="1048000" />
       <workItem from="1598337184294" duration="117000" />
+      <workItem from="1612266796545" duration="61000" />
+      <workItem from="1612266922316" duration="16000" />
+      <workItem from="1612266963144" duration="36000" />
+      <workItem from="1612267010679" duration="34000" />
+      <workItem from="1612267086884" duration="60000" />
+      <workItem from="1612269091935" duration="1251000" />
+      <workItem from="1613005053697" duration="199000" />
+      <workItem from="1619523724790" duration="21000" />
+      <workItem from="1619659808471" duration="476000" />
+      <workItem from="1623470906865" duration="13000" />
     </task>
     <servers />
   </component>
